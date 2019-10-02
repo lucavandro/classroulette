@@ -1,0 +1,21 @@
+body,
+.custom-select{
+    background-color: #f8f9fa!important;
+}
+
+.container{
+    height: calc(100vh - 56px);
+}
+
+.btn{
+    margin: 50px auto;
+    border-radius: 30px;
+    padding: 8px 64px;
+}
+
+h1{
+    font-size: 15vw;
+    font-size: 10vw;
+    overflow: hidden;
+    padding: 60px 0;
+}
