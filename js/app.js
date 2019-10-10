@@ -52,7 +52,7 @@ var app = new Vue({
         pickStudents: function(){
             var that = this;
             var i = 0;
-            var students = _.shuffle(studentsClass[that.classNum]);
+            var students = studentsClass[that.classNum];
             var intervalHandler = setInterval(function(){
                 that.message = students[i++%students.length];
             }, 100);
