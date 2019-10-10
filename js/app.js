@@ -2,12 +2,13 @@ var studentsClass = {
     3 : [
         "Caiazzo",
         "Coppola",
+        "Crisci",
         "D'Aiello ",
         "De Rosa",
         "Ercolano",
         "Benito Farina",
         "Michele Farina ",
-        "Antonio Merola",
+        "Merola",
         "Sebastopoli",
         "Vigliotti",
         "Vittoria"
