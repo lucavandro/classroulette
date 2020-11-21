@@ -1,5 +1,24 @@
 var studentsClass = {
-    3 : [
+    "4ESA": [
+        "Coppola 02",
+        "Coppola 03",
+        "De Simone",
+        "della Valle",
+        "Diop",
+        "Fruggiero",
+        "Gagliardi",
+        "Garofalo",
+        "Guida",
+        "Mormile",
+        "Pellegrino",
+        "Perrotta",
+        "Sacco",
+        "Santonastaso",
+        "Ventrone",
+        "Vigliotti",
+        "Vinciguerra",
+    ],
+    "4ITI" : [
         "Caiazzo",
         "Coppola",
         "Crisci",
@@ -13,7 +32,7 @@ var studentsClass = {
         "Vigliotti",
         "Vittoria"
     ],
-    4 : [
+    "5ITI" : [
         "Della Valle",
         "Desiato",
         "De Simone",
@@ -25,28 +44,13 @@ var studentsClass = {
         "Sagnelli",
         "Varvo"
     ],
-    5 : [
-        "Amato",
-        "Bove",
-        "Caiazzo",
-        "Carfora",
-        "Franceschetti",
-        "Gazzillo",
-        "Laudato",
-        "Liccardi",
-        "Loffredo",
-        "Madonna",
-        "Nuzzo",
-        "Papa",
-        "Rivetti",
-        "Zarrillo"
-    ]
+    
 }
 var app = new Vue({
     el: '#app',
     data: {
       message: 'Pronti?',
-      classNum: 5
+      classNum: "4ESA"
     },
     methods:{
         pickStudents: function(){
