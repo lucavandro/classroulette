@@ -54,15 +54,17 @@ var app = new Vue({
     },
     methods:{
         pickStudents: function(){
+            $("#student").removeClass("animate__animated animate__heartBeat")
             var that = this;
             var i = 0;
-            var students = studentsClass[that.classNum];
+            var students = _.shuffle(studentsClass[that.classNum]);
             var intervalHandler = setInterval(function(){
                 that.message = students[i++%students.length];
             }, 100);
             setTimeout(function(){
                 clearInterval(intervalHandler);
                 that.message = _.sample(students);
+                $("#student").addClass("animate__animated animate__heartBeat")
             }, 5000);
             
         }
