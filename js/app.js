@@ -18,7 +18,7 @@ var studentsClass = {
         "Vigliotti",
         "Vinciguerra",
     ],
-    "FESA": [
+    "4FSA": [
         "Adinolfi",
         "Barbarino",
         "Borbone",
