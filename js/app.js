@@ -90,7 +90,7 @@ var app = new Vue({
     el: '#app',
     data: {
       message: 'Pronti?',
-      classNum: "4ESA"
+      classNum: "2ESA"
     },
     methods:{
         pickStudents: function(){
