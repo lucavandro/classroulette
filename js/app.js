@@ -1,5 +1,5 @@
 var studentsClass = {
-    "4ESA": [
+    "5ESA": [
         "Coppola 02",
         "Coppola 03",
         "De Simone",
@@ -18,7 +18,7 @@ var studentsClass = {
         "Vigliotti",
         "Vinciguerra",
     ],
-    "4FSA": [
+    "5FSA": [
         "Adinolfi",
         "Barbarino",
         "Borbone",
@@ -46,19 +46,31 @@ var studentsClass = {
         "Policastro",
         "Rispoli"
     ],
-    "4ITI" : [
-        "Caiazzo",
-        "Coppola",
-        "Crisci",
-        "D'Aiello ",
-        "De Rosa",
-        "Ercolano",
-        "Benito Farina",
-        "Michele Farina ",
-        "Merola",
-        "Sebastopoli",
+    "2ESA" : [
+        "Bencivenga",
+        "Bucciero",
+        "Cioffi",
+        "Corraro ",
+        "Del Monaco",
+        "della Ventura",
+        "di Nuzzo",
+        "di Silvestro",
+        "Ferrara",
+        "Fucci",
         "Vigliotti",
-        "Vittoria"
+        "Gavidia",
+        "Lombardi",
+        "Manna",
+        "Mannelli",
+        "Martinisi",
+        "Pagliaro",
+        "Piscitelli",
+        "Santangelo",
+        "Santonastaso",
+        "Xu"
+        
+        
+        
     ],
     "5ITI" : [
         "Della Valle",
