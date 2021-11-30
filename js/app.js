@@ -1,4 +1,31 @@
 var studentsClass = {
+    "1ESA":[
+        "Alabis",
+        "Bernardo",
+        "Biondo",
+        "Caprio",
+        "Cicchella",
+        "Cioffi",
+        "d'Angelo",
+        "de Chiara",
+        "de Lucia L.",
+        "de Lucia S.",
+        "del Giudice",
+        "del Prete",
+        "Ferraro",
+        "Grieco",
+        "Guida",
+        "Mastroianni",
+        "Mataluna", 
+        "Merola",
+        "Nappo",
+        "Pascarella",
+        "Santacroce",
+        "Scarano",
+        "Ventrone"
+        
+    ],
+    
     "5ESA": [
         "Coppola 02",
         "Coppola 03",
