@@ -1,4 +1,30 @@
 var studentsClass = {
+    "1ASA":[
+        "CARFORA",
+    "COMOTTI",
+    "d'AIELLO",
+    "d'ALESSANDRO",
+    "DI VICO",
+    "DRAGONE",
+    "FEPPO",
+    "GIOIELLA",
+    "GRIECO",
+    "GUERRA",
+    "GUIDA",
+    "IANNIELLO",
+    "IGNARRA",
+    "LIBERTI",
+    "LOFFREDO",
+    "MICCO",
+    "PIROZZI",
+    "PISCITELLI",
+    "PLACIDO",
+    "ROPERTI",
+    "SANTONASTASO",
+    "SIVIERO",
+    "SOLARO",
+    "UGHETTO"
+    ],
     "1ESA":[
         "Alabis",
         "Bernardo",
@@ -98,26 +124,15 @@ var studentsClass = {
         
         
         
-    ],
-    "5ITI" : [
-        "Della Valle",
-        "Desiato",
-        "De Simone",
-        "Fusco",
-        "Passariello",
-        "Pascarella",
-        "Petito",
-        "Quagliero",
-        "Sagnelli",
-        "Varvo"
-    ],
+    ]
     
 }
 var app = new Vue({
     el: '#app',
     data: {
       message: 'Pronti?',
-      classNum: "2ESA"
+      classNum: Object.keys(studentsClass)[0],
+      classes: Object.fromEntries(Object.keys(studentsClass).map(x=>[x,x]))
     },
     methods:{
         pickStudents: function(){
@@ -135,5 +150,6 @@ var app = new Vue({
             }, 5000);
             
         }
-    }
+    },
+  
 });
