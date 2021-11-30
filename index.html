@@ -23,6 +23,10 @@
                     <option value="4FSA">4 FSA</option>
                     <option value="5ESA">4 ITI</option>
                     <option value="5ITI">5 ITI</option>
+                    
+                    <option v-for="(item, key) in classes" :value="key">
+                      {{item}}
+                    </option>
                 </select>
             </form>
         </nav>
