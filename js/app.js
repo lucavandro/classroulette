@@ -1,5 +1,30 @@
 var studentsClass = {
-    "1ASA":[
+    
+    "5ASA":[
+        "BAIA",
+        "BOVE F",
+        "BOVE L",
+        "CALVANESE",
+        "CIRMA",
+        "CITO",
+        "COLELLA",
+        "D'ANGELO",
+        "INVERNO",
+        "MALIGNO",
+        "MARTONE G",
+        "MARTONE M",
+        "MASI",
+        "MIRETTO",
+        "PASSARIELLO",
+        "PATRELLI",
+        "PECCHILLO",
+        "PRISCO",
+        "RICCIARDI",
+        "SCAMPERTI",
+        "SOLLITTO",
+        "VINCIGUERRA"
+    ],
+    "2ASA":[
         "CARFORA",
     "COMOTTI",
     "d'AIELLO",
