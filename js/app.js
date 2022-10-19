@@ -1,5 +1,48 @@
 var studentsClass = {
-    
+    "3ASA":[
+        "CECI ANTONIO",
+"CORRERA MONICA",
+"DE LUCIA EGIDIO",
+"DE LUCA MARIA",
+"DELLA PERUTA ANTONIO",
+"D'ANGELO NARCISO VINCENZO",
+"DI NUZZO GIUSEPPE",
+"DI NUZZO MARIANNA",
+"FERRARA MARIA",
+"FERRARA ANNA",
+"FATICOSO GIANLUIGI",
+"LUCCI RAFFAELE",
+"PISCITELLI DOMENICO",
+"PASCARELLA ANGELA",
+"RAZZANO ANGELO MARIA",
+"TRAMONTANO VITO",
+"TOZZI AURORA",
+"VIGLIOTTA FRANCESCO ALESSIO",
+"VIGLIOTTI ANTONELLA",
+"VALENTINO CARLO",
+    ],
+    "4ASA":[
+        "Abbunto Raffaele",
+"Cinelli Francesco",
+"Costa Gabriele",
+"d'Albenzio Armando",
+"de Lucia Domenico",
+"di Lucia Sposito Clementina",
+"di Nuzzo Mario",
+"di Rosa Stefano",
+"Dragone Raffaele",
+"Errico Luisa",
+"Guerra Antonio",
+"Guida Francesco Pio",
+"Iaderosa Domenico",
+"Iazzetta Daniele",
+"Migliore Daniele",
+"Ruotolo Antonio",
+"Ruotolo Emanuele",
+"Tenneriello Antonio",
+"Vigliotti Carmen",
+"Vigliotti Michele",
+    ],
     "5ASA":[
         "BAIA",
         "BOVE F",
@@ -63,69 +106,21 @@ var studentsClass = {
         "de Lucia S.",
         "del Giudice",
         "del Prete",
+        "Errico",
         "Ferraro",
         "Grieco",
         "Guida",
         "Mastroianni",
         "Mataluna", 
         "Merola",
-        "Nappo",
         "Pascarella",
+        "Pagliaro",
         "Santacroce",
         "Scarano",
         "Ventrone"
         
     ],
-    
-    "5ESA": [
-        "Coppola 02",
-        "Coppola 03",
-        "De Simone",
-        "della Valle",
-        "Diop",
-        "Fruggiero",
-        "Gagliardi",
-        "Garofalo",
-        "Guida",
-        "Mormile",
-        "Pellegrino",
-        "Perrotta",
-        "Sacco",
-        "Santonastaso",
-        "Ventrone",
-        "Vigliotti",
-        "Vinciguerra",
-    ],
-    "5FSA": [
-        "Adinolfi",
-        "Barbarino",
-        "Borbone",
-        "Bucciero",
-        "Crisci",
-        "d'Aiello M.",
-        "d'Aiello P.",
-        "d'Angelo",
-        "de Lucia",
-        "del Monaco",
-        "di Rosa",
-        "di Nuzzo",
-        "Esposito",
-        "Ferraro",
-        "Santonastaso",
-        "Guida M.",
-        "Guida R.",
-        "Loffredo",
-        "Madonna",
-        "Pascarella G.",
-        "Pascarella I.",
-        "Petrillo A.",
-        "Petrillo D.",
-        "Petrone",
-        "Policastro",
-        "Rispoli"
-    ],
-    "2ESA" : [
-        "Bencivenga",
+    "3ESA" : [
         "Bucciero",
         "Cioffi",
         "Corraro ",
@@ -135,19 +130,16 @@ var studentsClass = {
         "di Silvestro",
         "Ferrara",
         "Fucci",
-        "Vigliotti",
-        "Gavidia",
         "Lombardi",
         "Manna",
         "Mannelli",
         "Martinisi",
         "Pagliaro",
         "Piscitelli",
-        "Santangelo",
+        "Loffredo",
+        "Spisto",
         "Santonastaso",
-        "Xu"
-        
-        
+
         
     ]
     
@@ -157,7 +149,8 @@ var app = new Vue({
     data: {
       message: 'Pronti?',
       classNum: Object.keys(studentsClass)[0],
-      classes: Object.fromEntries(Object.keys(studentsClass).map(x=>[x,x]))
+      classes: Object.fromEntries(Object.keys(studentsClass).map(x=>[x,x])),
+      sampled: [],
     },
     methods:{
         pickStudents: function(){
@@ -170,7 +163,12 @@ var app = new Vue({
             }, 100);
             setTimeout(function(){
                 clearInterval(intervalHandler);
-                that.message = _.sample(students);
+                var sample = _.sample(students);
+                while(that.sampled.indexOf(sample)!=-1){
+                    sample = _.sample(students);
+                }
+                that.sampled.push(sample);
+                that.message = sample;
                 $("#student").addClass("animate__animated animate__heartBeat")
             }, 5000);
             
