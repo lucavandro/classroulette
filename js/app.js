@@ -148,7 +148,7 @@ var app = new Vue({
     el: '#app',
     data: {
       message: 'Pronti?',
-      classNum: Object.keys(studentsClass)[0],
+      classNum: Object.keys(studentsClass).sort()[0],
       classes: Object.fromEntries(Object.keys(studentsClass).map(x=>[x,x])),
       sampled: [],
     },
