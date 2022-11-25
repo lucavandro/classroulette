@@ -93,7 +93,7 @@ var studentsClass = {
     "SOLARO",
     "UGHETTO"
     ],
-    "1ESA":[
+    "2ESA":[
         "Alabis",
         "Bernardo",
         "Biondo",
@@ -106,6 +106,7 @@ var studentsClass = {
         "de Lucia S.",
         "del Giudice",
         "del Prete",
+        "Eliseo",
         "Errico",
         "Ferraro",
         "Grieco",
@@ -114,7 +115,6 @@ var studentsClass = {
         "Mataluna", 
         "Merola",
         "Pascarella",
-        "Pagliaro",
         "Santacroce",
         "Scarano",
         "Ventrone"
