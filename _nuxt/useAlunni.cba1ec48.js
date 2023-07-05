@@ -1,1 +1,0 @@
-import{B as e,c as t}from"./entry.79dca144.js";import{c as a,a as n}from"./data.a9db71e0.js";const o=()=>e("classeSelezionata",()=>a[0]),c=()=>t(()=>{const s=o();return n[s.value||a[0]]});export{o as a,c as u};
